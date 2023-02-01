@@ -16,11 +16,17 @@ Task 5 : Write a method that accepts 2 parameters (I did not show task 5. if you
 
 
 import deneme.utilities.TestBase;
+
 import org.apache.logging.log4j.LogManager;
+
 import org.apache.logging.log4j.Logger;
+
 import org.junit.Test;
+
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
+
 import tests.D12_Log4JTest;
 
 import java.util.List;
