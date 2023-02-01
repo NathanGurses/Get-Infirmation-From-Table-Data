@@ -4,9 +4,13 @@ In this file I will show you
 How to get some or entire information from table data
 
 Task 1 : Print the entire table
+
 Task 2 : Print All Rows
+
 Task 3 : Print Last row data only
+
 Task 4 : Print column 5 data in the table body
+
 Task 5 : Write a method that accepts 2 parameters (I did not show task 5. if you have any question ask me)
 
 
