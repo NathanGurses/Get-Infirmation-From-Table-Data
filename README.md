@@ -25,6 +25,7 @@ public class WebTables extends TestBase {
     private static Logger logger = LogManager.getLogger(D09_WebTables.class.getName());
     @Test
     public void printTable() {
+
 //    https://the-internet.herokuapp.com/tables
         logger.info("Going to the main page");
         driver.get("https://the-internet.herokuapp.com/tables");
@@ -37,8 +38,10 @@ public class WebTables extends TestBase {
         String table = driver.findElement(By.xpath("//table[@id='table1']")).getText();
         System.out.println(table);
         logger.info("***Print All table Data***");
+
 //        System.out.println("***Print All Table Data***");
-        List<WebElement> allData = driver.findElements(By.xpath("//table[@id='table1']//td"));
+
+List<WebElement> allData = driver.findElements(By.xpath("//table[@id='table1']//td"));
         for (WebElement eachData : allData){
 
             System.out.println(eachData.getText());
@@ -47,6 +50,8 @@ public class WebTables extends TestBase {
 
         logger.info("TESTING COMPLETE. YAAAAAAY");
     }
+    
+    
 //    Task 2 : Print All Rows
 
     @Test
@@ -62,13 +67,18 @@ public class WebTables extends TestBase {
             count++;
         }
         System.out.println("Row 4 data ===>>>" + allRows.get(3).getText());
+    
 
 //    Task 3 : Print Last row data only
 
 
         System.out.println("Last Row===>>> "+allRows.get(allRows.size()-1).getText());
     }
+    
+    
 //    Task 4 : Print column 5 data in the table body
+    
+    
     @Test
     public void printColumns(){
         driver.get("https://the-internet.herokuapp.com/tables");
