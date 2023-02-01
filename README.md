@@ -34,6 +34,8 @@ public class WebTables extends TestBase {
 
 
 //        System.out.println("***Print Entire table***");
+
+
         logger.info("***Print Entire table***");
         String table = driver.findElement(By.xpath("//table[@id='table1']")).getText();
         System.out.println(table);
@@ -88,10 +90,15 @@ List<WebElement> allData = driver.findElements(By.xpath("//table[@id='table1']//
         }
 
     }
-//    Think about Task 5....
-//    Task 5 : Write a method that accepts 2 parameters
-//    Parameter 1 = row number
-//    Parameter 2 = column number
-//    printData(2,3);  => prints data in 2nd row 3rd column
+    
+//    Think about on Task 5....
+
+    //    Task 5 : Write a method that accepts 2 parameters
+
+    //    Parameter 1 = row number
+
+    //    Parameter 2 = column number
+
+    //    printData(2,3);  => prints data in 2nd row 3rd column
 
 }
